@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.info p {
+    display: none;
+    transition: 0.5s;
+    white-space: pre-line;
+    text-align: left;
+    background-color: #fff;
+    padding: 0 25px 25px 25px;
+    border-radius: 10px;
+    line-height: 25px;
+    margin-right: 15px;
+    font-size: 20px;
+    animation: 0.5s ease appearance;
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;
+    } 
+}
+
+.info i:hover {
+    scale: 1.2;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.info i:hover + p {
+    display: block;
+}
+
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col h2 {
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.col h2:hover {
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.col button {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.col button:hover {
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
